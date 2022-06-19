@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
-
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://imperial:imperial-fdt-online-2019-colossal-shelf@imperial-2021.ckp3dl3vzxoh.eu-west-2.rds.amazonaws.com:5432/dvdrental'
 db = SQLAlchemy(app)
